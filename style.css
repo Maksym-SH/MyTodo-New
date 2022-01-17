@@ -1,0 +1,88 @@
+body {
+  background-color: aquamarine;
+  font-size: 17px;
+}
+.containerInputs {
+  margin: 0 auto;
+  width: 80%;
+}
+input,
+textarea {
+  border: none;
+}
+.inputs {
+  border-radius: 10px;
+}
+.colors {
+  height: 27px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: bisque;
+}
+.inputTextParams {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+.input-number {
+  border-radius: 10px;
+}
+.button {
+  font-size: 25px;
+  width: 10%;
+  min-width: 95px;
+}
+.button-deleteTask {
+  position: absolute;
+  top: 10px;
+  left: 45%;
+}
+.todo {
+  background-color: rgb(253, 0, 0);
+}
+.item {
+  margin: 10px;
+  background-color: bisque;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+  min-height: 92.5px;
+  position: relative;
+  padding: 10px;
+}
+.item h5 {
+  margin: 50px auto 20px auto;
+}
+.item-btn-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.item-btn-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.todo,
+.progress,
+.done {
+  width: 30%;
+  min-width: 123px;
+  border-radius: 10px;
+}
+.todo,
+.progress,
+.done > h3,
+p {
+  text-transform: capitalize;
+}
+.params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .params {
+    display: block;
+  }
+}
