@@ -2,7 +2,7 @@ body {
   background-color: aquamarine;
   font-size: 17px;
 }
-.containerInputs {
+.container-inputs {
   margin: 0 auto;
   width: 80%;
 }
@@ -32,7 +32,7 @@ textarea {
   width: 10%;
   min-width: 95px;
 }
-.button-deleteTask {
+.button__deleteTask {
   position: absolute;
   top: 10px;
   left: 45%;
@@ -40,7 +40,7 @@ textarea {
 .todo {
   background-color: rgb(253, 0, 0);
 }
-.item {
+.block-tasks {
   margin: 10px;
   background-color: bisque;
   border-radius: 10px;
@@ -53,12 +53,12 @@ textarea {
 .item h5 {
   margin: 50px auto 20px auto;
 }
-.item-btn-right {
+.task__button-right {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.item-btn-left {
+.task__button-left {
   position: absolute;
   top: 10px;
   left: 10px;

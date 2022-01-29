@@ -16,7 +16,7 @@
   <body>
     <div id="app">
       <h1 align="center">My TODO</h1>
-      <div class="containerInputs mt-5">
+      <div class="container-inputs mt-5">
         <input
           type="text"
           v-model="title"
@@ -29,7 +29,7 @@
           v-model="content"
         ></textarea>
       </div>
-      <div class="containerInputs mt-3 params">
+      <div class="container-inputs mt-3 params">
         <div class="d-flex align-items-center">
           <input
             type="text"
@@ -73,13 +73,13 @@
       >
         Add
       </button>
-      <div class="containerInputs d-flex mt-5 justify-content-between">
+      <div class="container-inputs d-flex mt-5 justify-content-between">
         <div class="todo m-2">
           <h3 align="center">todo</h3>
           <hr />
           <template v-cloak>
             <div
-              class="item"
+              class="block-tasks"
               v-for="(item, index) in todo"
               :key="index"
               :style="{'background-color': item.bgColor, 'color': item.color, 'font-size': item.fontSize}"
@@ -88,13 +88,13 @@
               <p>{{item.content}}</p>
 
               <button
-                class="btn bg-primary item-btn-right"
+                class="btn bg-primary task__button-right"
                 @click="swapTodo(index, 'todo', 'right')"
               >
                 &xrArr;
               </button>
               <button
-                class="btn btn-danger button-deleteTask"
+                class="btn btn-danger button__deleteTask"
                 @click="deleteTask('todo',index)"
               >
                 &times;
@@ -107,7 +107,7 @@
           <hr />
           <template v-cloak>
             <div
-              class="item"
+              class="block-tasks"
               v-for="(item, index) in progress"
               :key="index"
               :style="{'background-color': item.bgColor, 'color': item.color, 'font-size': item.fontSize}"
@@ -116,19 +116,19 @@
               <p>{{item.content}}</p>
 
               <button
-                class="btn bg-primary item-btn-right"
+                class="btn bg-primary task__button-right"
                 @click="swapTodo(index, 'progress', 'right')"
               >
                 &xrArr;
               </button>
               <button
-                class="btn bg-primary item-btn-left"
+                class="btn bg-primary task__button-left"
                 @click="swapTodo(index, 'progress', 'left')"
               >
                 &xlArr;
               </button>
               <button
-                class="btn btn-danger button-deleteTask"
+                class="btn btn-danger button__deleteTask"
                 @click="deleteTask('progress',index)"
               >
                 &times;
@@ -141,7 +141,7 @@
           <hr />
           <template v-cloak>
             <div
-              class="item"
+              class="block-tasks"
               v-for="(item, index) in done"
               :key="index"
               :style="{'background-color': item.bgColor, 'color': item.color, 'font-size': item.fontSize}"
@@ -149,13 +149,13 @@
               <h5>{{item.title }}</h5>
               <p>{{item.content}}</p>
               <button
-                class="btn bg-primary item-btn-left"
+                class="btn bg-primary task__button-left"
                 @click="swapTodo(index, 'done', 'left')"
               >
                 &xlArr;
               </button>
               <button
-                class="btn btn-danger button-deleteTask"
+                class="btn btn-danger button__deleteTask"
                 @click="deleteTask('done',index)"
               >
                 &times;
